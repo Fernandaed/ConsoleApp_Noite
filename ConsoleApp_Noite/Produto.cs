@@ -41,12 +41,12 @@ namespace ConsoleApp_Noite
             Valor = valor;
         }
 
-        public int getId() 
+        public int getId() //entrada
         {
             return Id;
         }
 
-        public void setId(int id) 
+        public void setId(int id) //saida 
         {
             Id = id;
         
