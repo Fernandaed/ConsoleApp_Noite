@@ -31,7 +31,7 @@ namespace ConsoleApp_Noite
             return Rua;
         
         }
-
+         
         public string getNumero(string numero) 
         { 
             return Numero; 
