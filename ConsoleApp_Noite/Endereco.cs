@@ -26,6 +26,36 @@ namespace ConsoleApp_Noite
             Estado = estado;
         }
 
+        public string EnderecoCompleto() 
+        {
+            return Rua + ", " + Numero + "Bairro" + Bairro + "Cidade" + Cidade + "Estado" + Estado;
+        }
+
+        public string EnderecoCurto()
+        {
+            return Rua + " " + Numero;
+        }
+
+        public Endereco BuscaPorCep(string cep)
+        {
+            return new Endereco("","","", cep, "", "");
+        }
+
+        public string EstadoPorCidade(string estado)
+        {
+            if(estado = "sp") 
+            {
+                return "Taquaritinga";
+            }
+            return Cidade;
+        }
+
+        public void InserirNoBanco(Endereco endereco)
+        {
+            //db.ENDERECO.ADD(endereco)
+            //db.savechanges();
+        }
+
         public string getRua(string rua) 
         {
             return Rua;

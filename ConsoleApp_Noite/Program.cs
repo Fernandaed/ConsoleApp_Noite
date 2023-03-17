@@ -25,7 +25,9 @@ Console.WriteLine(c2.getEndereco().getRua() + " " + c2.getEndereco().getNumero()
 
 c2.getEndereco().setNumero("135");
 
-Console.WriteLine(c2.getEndereco().getNumero() );
+Console.WriteLine(c2.getEndereco().getNumero());
+
+Console.WriteLine(c2.getEndereco().EnderecoCompleto());
 
 
 
