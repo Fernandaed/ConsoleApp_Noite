@@ -17,11 +17,11 @@ namespace ConsoleApp_Noite.Heranca
         {
             if(temMotor == true) 
             {
-                return "Com motor " + numeroAssentos + " " + numeroPortas;
+                return "Com motor, Assentos: " + numeroAssentos + " N° Portas: " + numeroPortas;
             }
             else
             {
-                return numeroAssentos + " " + numeroPortas;
+                return "Assentos: " + numeroAssentos + " N° Portas: " + numeroPortas;
             }
            
         }
