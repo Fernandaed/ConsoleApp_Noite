@@ -43,7 +43,7 @@ namespace ConsoleApp_Noite
 
         public string EstadoPorCidade(string estado)
         {
-            if(estado = "sp") 
+            if(estado == "sp") 
             {
                 return "Taquaritinga";
             }

@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp_Noite;
+using ConsoleApp_Noite.Heranca;
 
 Console.WriteLine("Hello, World!");
 
@@ -21,13 +22,54 @@ Cliente c3 = new Cliente(3, "Ryan", "9913456895", endereco);
 Cliente c4 = new Cliente(4, "Fernanda", "9913456895", endereco);
 Cliente c5 = new Cliente(5, "Giovanni", "9913456895", endereco);
 
-Console.WriteLine(c2.getEndereco().getRua() + " " + c2.getEndereco().getNumero() );
+//Console.WriteLine(c2.getEndereco().getRua() + " " + c2.getEndereco().getNumero() );
 
-c2.getEndereco().setNumero("135");
+//c2.getEndereco().setNumero("135");
 
-Console.WriteLine(c2.getEndereco().getNumero());
+//Console.WriteLine(c2.getEndereco().getNumero());
 
 Console.WriteLine(c2.getEndereco().EnderecoCompleto());
+
+
+
+// Pasta Herança
+
+
+Carro gol = new Carro();
+gol.temMotor = true;
+gol.numeroPortas = 4;
+gol.numeroAssentos = 5;
+gol.fabricante = "VW;";
+gol.CintoSeguranca = true;
+gol.ArCondicionado = false;
+
+
+Bike caloi = new Bike();
+caloi.temMotor = false;
+caloi.numeroPortas = 0;
+caloi.numeroAssentos = 1;
+
+
+Carro Saveiro = new Carro();
+Saveiro.fabricante = "VW";
+
+
+Carro Uno = new Carro();
+Uno.fabricante = "Fiat";
+
+Carro Palio = new Carro();
+Palio.fabricante = "Fiat";
+
+Bike speed = new Bike(); 
+speed.temMotor = false;
+speed.numeroPortas = 0;
+
+//Faça uma ação chamada ExibirDados
+//mostre as informações na tela pelo Console.WriteLine
+
+Console.WriteLine(speed.ExibirDados());
+Console.WriteLine(gol.ExibirDados());
+
 
 
 
