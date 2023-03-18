@@ -13,6 +13,7 @@ p1.setDescricao("Cerveja Skol 1 litro");
 
 Console.WriteLine(p1.getDescricao()+ " " + p1.getValor());
 
+
 Endereco endereco = new Endereco("Rua Mario Miziara", "91", "Sobral", "15906304", "Taquaritinga", "SP");
 
 
@@ -39,7 +40,7 @@ Carro gol = new Carro();
 gol.temMotor = true;
 gol.numeroPortas = 4;
 gol.numeroAssentos = 5;
-gol.fabricante = "VW;";
+gol.fabricante = "VW";
 gol.CintoSeguranca = true;
 gol.ArCondicionado = false;
 
@@ -71,5 +72,64 @@ Console.WriteLine(speed.ExibirDados());
 Console.WriteLine(gol.ExibirDados());
 
 
+// Lista
+
+List<Carro> listaCarros = new List<Carro>();
+listaCarros.Add(gol);
+listaCarros.Add(Palio);
+listaCarros.Add(Uno);
+listaCarros.Add(Saveiro);
+
+Console.WriteLine(listaCarros[0].fabricante);
+
+listaCarros.Remove(Palio);
+
+//exibir a quantidade de itens da lista
+
+for(int i = 0; i < listaCarros.Count; i++)
+{
+    Console.WriteLine(listaCarros[i].ExibirDados());
+}
+
+// ou
+
+foreach(var item in listaCarros)
+{
+    Console.WriteLine(item.ExibirMarca());
+}
+
+
+//Imprima na tela todos os clientes desse contexto;
+//Crie uma lista para eles;
+
+//Crie uma lista com 560 produtos e imprima na tela
+//Crie uma lista que aceite qualquer tipo de veículo e imprima na tela;
+
+List<Cliente> listaCliente = new List<Cliente>();
+listaCliente.Add(c1);
+listaCliente.Add(c2);
+listaCliente.Add(c3);
+listaCliente.Add(c4);
+listaCliente.Add(c5);
+
+foreach (var item in listaCliente)
+{
+    Console.WriteLine(item.ExibirClientes());
+}
+
+// 560 produtos
+
+List<Produto> listaProduto = new List<Produto>();
+
+
+for(int produto = 1; produto <= 560 ; produto++)
+{
+    Console.WriteLine("Produto n° " + produto);
+}  
+
+
+//Lista que aceite qualquer tipo de veiculo
+
+List<Veiculo> listaVeiculos = new List<Veiculo>();
 
 

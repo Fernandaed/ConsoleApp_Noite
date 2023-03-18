@@ -70,6 +70,11 @@ namespace ConsoleApp_Noite
         {
             Telefone= telefone;
         }
+
+        public string ExibirClientes()
+        {
+            return "Nome: " + Nome + " " + "Telefone" + " " + Telefone;
+        }
      
     }
 
